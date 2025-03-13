@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  sam:
+    build: .
+    container_name: sam_container
+    restart: always
+    ports:
+      - "1001:1001"
+    volumes:
+      - .:/app
